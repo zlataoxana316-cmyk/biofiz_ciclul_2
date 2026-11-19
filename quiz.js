@@ -1,5 +1,5 @@
 const byId = id => document.getElementById(id);
-const names = ['Toate temele', 'Spectre și analiză spectrală', 'Radiația laser', 'Radioactivitate', 'Polarizare și polarimetrie', 'Absorbție și fotocolorimetrie'];
+const names = ['Toate temele', 'Spectre și analiză spectrală', 'Radiația laser', 'Radioactivitate', 'Polarizare și polarimetrie', 'Absorbție și fotocolorimetrie', 'Membrane și electrochimie', 'Radiații și luminescență', 'Magnetism și fizică nucleară'];
 let theme = -1;
 let mode = 'study';
 let position = 0;
