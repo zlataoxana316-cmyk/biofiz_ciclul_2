@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Biofizică medicală · Varianta 2</title>
+<link rel="stylesheet" href="../style.css">
+<script src="items.js" defer></script>
+<script src="quiz.js" defer></script>
+</head>
+<body>
+<header class="top"><div class="brand"><span class="mark" aria-hidden="true">λ</span><span>Biofizică medicală<small>USMF · Ciclul II</small></span></div><button id="full" class="minor">Ecran complet</button></header>
+<main>
+<section id="home">
+<div class="hero"><div class="orbit" aria-hidden="true">λ</div><div class="hero-copy"><p class="eyebrow">PREGĂTIRE PENTRU TOTALIZARE</p><h1>Biofizică medicală · Varianta 2</h1><p>Exersează spectroscopia, laserul, radioactivitatea, polarizarea, fotocolorimetria, membranele, electrochimia și magnetismul. Verifică soluțiile și înțelege raționamentul.</p><div class="meta"><span>297 de întrebări</span><span>8 teme</span><span>Răspunsuri explicate</span></div></div></div>
+<div class="section-title"><h2>Alege tema</h2><span id="history"></span></div>
+<div id="topics" class="topics" aria-label="Teme"></div>
+<div class="start card">
+<div class="field"><label for="mode">Mod de lucru</label><select id="mode"><option value="study">Studiu · feedback imediat</option><option value="exam">Simulare · feedback la final</option></select></div>
+<div class="field"><label for="size">Întrebări</label><select id="size"><option value="10">10 întrebări</option><option value="25">25 de întrebări</option><option value="all">Toate din temă</option></select></div>
+<div class="field"><label for="item">Mergi la un item</label><input id="item" type="number" min="1" max="297" placeholder="1–297"></div>
+<button id="start" class="primary">Începe sesiunea →</button>
+</div>
+<p class="sources">Materiale de bază · <cite>Biofizica. Totalizarea 2 – Itemi pentru pregătire</cite> și <cite>Biofizică – Totalizarea 2: toate întrebările cu răspunsuri</cite>. Referințele la pagini sunt preluate din PDF-ul de răspunsuri.</p>
+</section>
+<section id="session" hidden>
+<div class="section-title"><button class="minor" id="home-back">← Teme</button><span id="position"></span></div>
+<progress id="progress" max="100" value="0" aria-label="Progresul sesiunii"></progress>
+<article class="card question">
+<div class="tags"><span id="topic"></span><span id="original"></span></div>
+<h2 id="question" tabindex="-1"></h2>
+<img id="figure" alt="Figura din fișa de itemi" hidden>
+<form id="options"></form>
+<div id="feedback" role="status" hidden></div>
+<div class="actions"><button id="back" class="minor">← Înapoi</button><div><button id="check" class="minor">Verifică</button><button id="next" class="primary">Următoarea →</button></div></div>
+</article>
+</section>
+<section id="results" hidden>
+<div class="section-title"><button class="minor" id="result-home">← Teme</button></div>
+<div class="card summary"><p class="eyebrow">REZULTATUL SESIUNII</p><h2 id="score" tabindex="-1"></h2><p id="score-detail"></p><div class="actions"><button id="retry" class="primary">Reia itemii greșiți</button><label><input id="only-errors" type="checkbox"> Afișează doar greșelile</label></div></div>
+<div id="review"></div>
+</section>
+</main>
+</body>
+</html>
